@@ -1,0 +1,17 @@
+{
+        "name": "Blypo Parsedown",
+        "type": "typo3-cms-extension",
+        "description": "Blypo parsedown viewhelper",
+        "homepage": "http://www.blypo.net",
+        "license": ["GPL-2.0+"],
+        "version": "0.0.1",
+        "require": {
+                "erusev/parsedown": "^1.6",
+                "caseyamcl/toc": "^1.1"
+        },
+        "autoload": {
+            "psr-4": {
+                "AuM\\BlypoParsedown\\": "Classes"
+            }
+    	}
+}

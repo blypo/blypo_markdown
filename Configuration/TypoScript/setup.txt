@@ -1,0 +1,10 @@
+tt_content.blypoparsedown_newcontentelement = COA
+tt_content.blypoparsedown_newcontentelement {
+	10 = BLYPO_TEMPLATE
+	10 {
+		paths {
+	       views = EXT:blypo_parsedown/Resources/Views
+	    }
+	    file = parsedown
+	}
+}
