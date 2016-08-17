@@ -11,7 +11,7 @@
     }
 
     $html = \Parsedown::instance()->text($text);
-    echo \AuM\BlypoParsedown\Helper\TocHelper::injectToc($html);
+    echo \AuM\BlypoMarkdown\Helper\TocHelper::injectToc($html);
 
 ?>
 
