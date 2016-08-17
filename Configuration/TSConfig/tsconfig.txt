@@ -1,9 +1,9 @@
 mod.wizards.newContentElement.wizardItems.special {
-    elements.blypoparsedown {
+    elements.blypomarkdown {
       iconIdentifier = content-special-markdown
       title = Markdown
       description = Adds markdown parser to page
-      tt_content_defValues.CType = blypoparsedown_newcontentelement
+      tt_content_defValues.CType = blypomarkdown_newcontentelement
     }
-    show = uploads,menu,html,div,shortcut,blypoparsedown
+    show = uploads,menu,html,div,shortcut,blypomarkdown
 }

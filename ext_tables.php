@@ -3,7 +3,7 @@ if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, "Configuration/TypoScript/", "Blypo Parsedown");
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, "Configuration/TypoScript/", "Blypo Markdown");
 
 // Add page TSConfig
 $pageTsConfig = \TYPO3\CMS\Core\Utility\GeneralUtility::getUrl(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TSConfig/tsconfig.txt');
@@ -11,21 +11,21 @@ $pageTsConfig = \TYPO3\CMS\Core\Utility\GeneralUtility::getUrl(\TYPO3\CMS\Core\U
 
 $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 $iconRegistry->registerIcon('content-special-markdown', \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class, array(
-    'source' => 'EXT:blypo_parsedown/Resources/Public/Icons/content-special-markdown.svg'
+    'source' => 'EXT:blypo_markdown/Resources/Public/Icons/content-special-markdown.svg'
 ));
 
 // Adds the content element to the "Type" dropdown
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
    array(
       'Markdown',
-      'blypoparsedown_newcontentelement',
+      'blypomarkdown_newcontentelement',
       \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY)
          . 'Resources/Public/Icons/content-special-markdown.svg'
    ),
    'CType'
 );
 
-$GLOBALS['TCA']['tt_content']['types']['blypoparsedown_newcontentelement'] = array(
+$GLOBALS['TCA']['tt_content']['types']['blypomarkdown_newcontentelement'] = array(
    'showitem' => '
          --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general;general,
          --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.header;header,bodytext,
@@ -38,7 +38,7 @@ $GLOBALS['TCA']['tt_content']['types']['blypoparsedown_newcontentelement'] = arr
 	',
 );
 
-$GLOBALS['TCA']['tt_content']['types']['blypoparsedown_newcontentelement']['columnsOverrides'] = array(
+$GLOBALS['TCA']['tt_content']['types']['blypomarkdown_newcontentelement']['columnsOverrides'] = array(
     'bodytext' => array(
         'config' => array(
             'type' => 'text',

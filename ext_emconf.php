@@ -1,7 +1,7 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext "blypo_parsedown".
+# Extension Manager/Repository config file for ext "blypo_markdown".
 #
 # Auto generated 21-06-2012 15:12
 #
@@ -11,8 +11,8 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'Blypo parsedown',
-    'description' => 'Blypo parsedown viewhelper',
+    'title' => 'Blypo markdown',
+    'description' => 'Blypo Markdown Content Element and Viewhelper',
     'category' => '',
     'author' => 'Andre Rinas, Martin Tillmann',
     'author_email' => 'andreknieriem@gmail.com, mtillmann@gmail.com',

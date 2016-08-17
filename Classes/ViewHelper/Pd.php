@@ -1,5 +1,5 @@
 <?php
-namespace AuM\BlypoParsedown\ViewHelper;
+namespace AuM\BlypoMarkdown\ViewHelper;
 
 class Pd extends \AuM\Blypo\ViewHelper\ViewHelper
 {

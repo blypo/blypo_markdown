@@ -1,5 +1,5 @@
 <?php
-namespace AuM\BlypoParsedown\Helper;
+namespace AuM\BlypoMarkdown\Helper;
 
 class TocHelper
 {
